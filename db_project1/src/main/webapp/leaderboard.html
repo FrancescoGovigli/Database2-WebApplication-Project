@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Leaderboard</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+          integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <script src="./scripts/leaderboard.js" defer></script>
+
+    <link rel="icon" href="https://images-na.ssl-images-amazon.com/images/I/41ePu-yVkKL._SX384_BO1,204,203,200_.jpg">
+
+</head>
+<body>
+
+<!--nav bar --->
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <a class="navbar-brand" style="margin-top: -0.3% " href="homePage.html">GamifiedApp</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarText">
+        <ul class="navbar-nav mr-auto">
+            <li class="nav-item active" >
+                <a class="nav-link" href="homePage.html" style="border: 1px groove #fcfcfc;border-radius: 5px;" >Home <span class=" sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="leaderboard.html" style="border: 1px solid #fcfcfc;border-radius: 5px;">LeaderBoard</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="questionnaire.html" style="border: 1px solid #fcfcfc;border-radius: 5px;">Questionnaire</a>
+            </li>
+        </ul>
+        <span class="navbar-text" id="var_username" style="margin-right: 50px">
+      Logged In: @Username
+    </span>
+        <ul  class="navbar-nav ">
+            <li class="nav-item" action="Logout" method="POST">
+                <a class="nav-link" href="index.html" style="border: 1px groove #fcfcfc;border-radius: 5px;" onclick="clearLocalStorage()">Logout</a>
+            </li>
+        </ul>
+    </div>
+</nav>
+
+<div class="container">
+
+    <div class="row">
+
+        <div class="col">
+            <table  class="table table-striped table-bordered table-hover" id="id_Leaderboard_Table"  style="text-align:center;width:100%">
+                <h2 style="text-align: center;margin-top: 2%">Product of the Day: Leaderboard</h2>
+                <thead >
+                <tr>
+                    <th>Position</th>
+                    <th>Username - Score</th>
+                </tr>
+                </thead>
+                <hr>
+                <tbody id="id_tableBody"></tbody>
+            </table>
+        </div>
+    </div>
+</div>
+<p id="error_message" style="font-size: 1.2em;text-align: center;margin-top: 20px"></p>
+</body>
+</html>
