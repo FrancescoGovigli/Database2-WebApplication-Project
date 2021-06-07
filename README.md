@@ -1,6 +1,6 @@
 # Database2-Project 2020-2021
 
-The goal of the project is to implement a web app that deals with gamified consumer data collection.
+The goal of the project is to design and implement a web app that deals with gamified consumer data collection.
 The web application is divided in 2 main parts.
 
 1) User App main functionalities: the compilation of the proposed questionnaire and the visualization of a leaderboard composed by all users who filled in the form for the specific product. Scoring is done following a specific policy explained in the next slides.
